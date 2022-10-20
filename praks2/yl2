@@ -1,0 +1,15 @@
+#! /bin/bash
+echo
+echo -n "Today is "
+echo -n `date +%A `
+echo -n  " "
+echo -n `date +%B `
+echo -n  " "
+echo -n `date +%d `
+echo -n  " "
+ 
+echo `date +%Y`
+
+echo
+echo -n "Calendar of"
+cal
