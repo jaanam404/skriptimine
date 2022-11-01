@@ -1,0 +1,27 @@
+#! /bin/bash
+
+#echo -e "Sisesta aja väärtus: \c"
+#read R
+R=$(date +"%H")
+
+if [ $R -ge 6 -a $R -lt 12 ]; then
+	echo -n "Tere hommikust, "
+echo -n `whoami`
+echo "!"
+
+elif [ $R -ge 12 -a $R -lt 18 ]; then
+	echo -n "Tere päevast, "
+echo -n `whoami`
+echo "!"
+
+elif [ $R -ge 18 -a $R -lt 22 ]; then
+	echo -n "Tere õhtust, "
+echo -n `whoami`
+echo "!"
+
+elif [ $R -ge 22 -a $R -lt 24 ] ||[ $R -ge 0 -a $R -lt 6 ]; then
+	echo -n "Head ööd, "
+echo -n `whoami`
+echo "!"
+
+fi
